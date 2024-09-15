@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div>
+      <div class="login"><a href="account/login">Log In</a></div>
+      <div class="login"><a href="account/logout">Log Out</a></div>
+      <div class="signup"><a href="account/register">Sign Up</a></div>
+    </div>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <% if(isMember) { %>
+    <p>You are a member.</p>
+    <% } else if (isMember === false) { %>
+    <p>You are not a member. :(</p>
+    <% } %>
+
+  </body>
+</html>

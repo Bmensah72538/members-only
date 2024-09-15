@@ -1,0 +1,10 @@
+<div>
+    <ul>
+        <% messages.forEach(function(message) { %>
+          <li>
+            <strong><%= message.author %></strong> Posted at: <%= message.date %> <br>
+            <%= message.messageText %><br>
+          </li>
+        <% }); %>
+      </ul>
+</div>
